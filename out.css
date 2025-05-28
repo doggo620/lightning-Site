@@ -1,6 +1,6 @@
 /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
@@ -20,7 +20,6 @@
     --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-sky-50: oklch(97.7% 0.013 236.62);
     --color-sky-200: oklch(90.1% 0.058 230.902);
-    --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -31,7 +30,6 @@
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
@@ -935,9 +933,9 @@ body {
   overflow-x: hidden;
 }
 .logo-text {
-  font-family: 'Tinos', serif;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .lightning-bg {
   background-color: #0a0a0a;
