@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+:root {
+    --primary-red: #ff0033;
+    --primary-dark: #0a0a0a;
+    --primary-gold: #ffd700;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-dark);
+    color: white;
+    overflow-x: hidden;
+}
+
+.logo-text {
+    font-family: 'Tinos', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lightning-bg {
+    background-color: #0a0a0a;
+    background-image: 
+        radial-gradient(at 20% 30%, rgba(255, 0, 51, 0.1) 0px, transparent 50%),
+        radial-gradient(at 80% 70%, rgba(255, 215, 0, 0.1) 0px, transparent 50%);
+}
+
+.lightning-border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, var(--primary-red), var(--primary-gold)) 1;
+}
+
+.lightning-text {
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.doggo-card {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.doggo-card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 20px 30px rgba(255, 0, 51, 0.3);
+}
+
+.gut-card {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.gut-card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 20px 30px #FDE68A
+}
+
+.lightning-strike {
+    position: relative;
+}
+
+.lightning-strike::after {
+    content: "⚡";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.3rem;
+    animation: strike 3s infinite;
+}
+
+@keyframes strike {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.paw-print {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.luxury-badge {
+    background: linear-gradient(45deg, var(--primary-gold), #c0c0c0);
+    color: black;
+    font-weight: bold;
+    transform: rotate(-5deg);
+    display: inline-block;
+}
+
+.gangsta-text {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mega-building {
+    position: relative;
+}
+
+.mega-building::before {
+    content: "MEGA";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-red);
+    color: white;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+    40% { transform: translateY(-20px) translateX(-50%); }
+    60% { transform: translateY(-10px) translateX(-50%); }
+}
+
+.star-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.star-icon::after {
+    content: "★";
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    color: var(--primary-gold);
+    font-size: 1.2rem;
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.moving-text{
+    background-size: 200% auto;
+    animation: gradient-move 3s linear infinite;
+}
+
+.try-button span{
+    background-size: 200% auto;
+}
+
+.try-button:hover span{
+    background-size: 200% auto;
+    animation: gradient-move 3s linear infinite;
+}
