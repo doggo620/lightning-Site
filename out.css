@@ -1,6 +1,6 @@
 /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
@@ -933,9 +933,9 @@ body {
   overflow-x: hidden;
 }
 .logo-text {
-  font-family: "Metamorphous", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  font-style: italic;
 }
 .lightning-bg {
   background-color: #0a0a0a;
